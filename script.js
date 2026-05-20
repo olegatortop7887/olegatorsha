@@ -1,8 +1,8 @@
 const defaultPhotos = [
-  "images/photo1.jpeg",
-  "images/photo2.jpeg",
-  "images/photo3.jpeg",
-  "images/photo4.jpeg"
+  "photo1.jpeg",
+  "photo2.jpeg",
+  "photo3.jpeg",
+  "photo4.jpeg"
 ];
 
 const defaultEvents = [
