@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OLEGATORSHA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home">
+      <img src="images/logo.jpeg" alt="OLEGATORSHA logo" />
+    </a>
+
+    <nav class="nav">
+      <a href="#photos">Фото</a>
+      <a href="#events">Мероприятия</a>
+      <a href="#booking" class="order-btn">Заказать</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <img class="hero-logo" src="images/logo.jpeg" alt="OLEGATORSHA" />
+        <p class="subtitle">Drag Queen • Show • Performance</p>
+        <div class="hero-buttons">
+          <a href="#photos">Смотреть фото</a>
+          <a href="#events">Мероприятия</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="photos" class="section">
+      <div class="section-head">
+        <p class="eyebrow">Gallery</p>
+        <h2>Фото</h2>
+        <p>Здесь можно добавлять фотографии прямо на сайте. Они сохраняются в браузере.</p>
+      </div>
+
+      <div class="admin-panel">
+        <h3>Добавить фото</h3>
+        <input id="photoInput" type="file" accept="image/*" multiple />
+        <button onclick="addPhotos()">Добавить фото</button>
+        <button class="ghost" onclick="resetPhotos()">Вернуть начальные фото</button>
+      </div>
+
+      <div id="photoGrid" class="photo-grid"></div>
+    </section>
+
+    <section id="events" class="section">
+      <div class="section-head">
+        <p class="eyebrow">Events</p>
+        <h2>Мероприятия</h2>
+        <p>Можно добавлять и удалять мероприятия: название, дата, описание и фото.</p>
+      </div>
+
+      <div class="admin-panel">
+        <h3>Добавить мероприятие</h3>
+        <input id="eventTitle" type="text" placeholder="Название мероприятия" />
+        <input id="eventDate" type="text" placeholder="Дата, например 29/05" />
+        <textarea id="eventDescription" placeholder="Описание"></textarea>
+        <input id="eventImage" type="file" accept="image/*" />
+        <button onclick="addEvent()">Добавить мероприятие</button>
+      </div>
+
+      <div id="eventsGrid" class="events-grid"></div>
+    </section>
+
+    <section id="booking" class="section booking">
+      <div class="booking-card">
+        <p class="eyebrow">Booking</p>
+        <h2>Заказать OLEGATORSHA</h2>
+        <p>Для заказа выступления, мероприятия или шоу:</p>
+        <div class="contacts">
+          <a href="https://www.instagram.com/_olegatorsha_/" target="_blank">Instagram: @_olegatorsha_</a>
+          <a href="tel:+972542454368">Телефон: +972542454368</a>
+          <a href="https://wa.me/972542454368" target="_blank">WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© OLEGATORSHA</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

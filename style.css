@@ -1,0 +1,363 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #050000;
+  color: white;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255, 0, 0, 0.25), transparent 28%),
+    radial-gradient(circle at 80% 10%, rgba(120, 0, 0, 0.35), transparent 25%),
+    linear-gradient(180deg, #080000, #000);
+  z-index: -2;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255,0,0,.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,0,0,.06) 1px, transparent 1px);
+  background-size: 70px 70px;
+  opacity: .25;
+  z-index: -1;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 86px;
+  padding: 14px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.82);
+  border-bottom: 1px solid rgba(255, 0, 0, .45);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 0 35px rgba(255,0,0,.18);
+}
+
+.brand img {
+  height: 56px;
+  width: 220px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.order-btn {
+  background: #c40000;
+  padding: 12px 18px;
+  border-radius: 999px;
+  box-shadow: 0 0 20px rgba(255,0,0,.65);
+}
+
+.hero {
+  min-height: calc(100vh - 86px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-glow {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: rgba(255, 0, 0, .28);
+  filter: blur(80px);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  max-width: 850px;
+}
+
+.hero-logo {
+  width: min(680px, 92vw);
+  border-radius: 16px;
+  box-shadow: 0 0 55px rgba(255,0,0,.18);
+}
+
+.subtitle {
+  margin: 22px 0;
+  color: #ffd6d6;
+  font-size: 18px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-buttons a,
+button {
+  cursor: pointer;
+  border: 0;
+  color: white;
+  background: #b00000;
+  padding: 14px 20px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 0 22px rgba(255,0,0,.35);
+}
+
+.section {
+  padding: 90px 24px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-head {
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.eyebrow {
+  color: #ff3131;
+  text-transform: uppercase;
+  letter-spacing: .35em;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: clamp(34px, 5vw, 68px);
+  margin: 8px 0;
+}
+
+.section-head p {
+  color: #ddd;
+}
+
+.admin-panel {
+  margin: 0 auto 34px;
+  padding: 22px;
+  max-width: 720px;
+  background: rgba(255,255,255,.055);
+  border: 1px solid rgba(255, 0, 0, .38);
+  border-radius: 22px;
+  box-shadow: 0 0 28px rgba(255,0,0,.12);
+}
+
+.admin-panel h3 {
+  margin-top: 0;
+}
+
+input, textarea {
+  width: 100%;
+  margin: 8px 0;
+  padding: 14px;
+  color: white;
+  background: #120505;
+  border: 1px solid rgba(255,255,255,.22);
+  border-radius: 12px;
+  font-size: 15px;
+}
+
+textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.ghost {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,.3);
+  box-shadow: none;
+  margin-left: 8px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.photo-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #120505;
+  border: 1px solid rgba(255,0,0,.35);
+  min-height: 340px;
+  box-shadow: 0 0 28px rgba(255,0,0,.12);
+}
+
+.photo-card img {
+  width: 100%;
+  height: 100%;
+  min-height: 340px;
+  object-fit: cover;
+  display: block;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 9px 11px;
+  border-radius: 10px;
+  background: rgba(0,0,0,.75);
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.event-card {
+  position: relative;
+  overflow: hidden;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,0,0,.4);
+  border-radius: 24px;
+  box-shadow: 0 0 30px rgba(255,0,0,.14);
+}
+
+.event-card img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  display: block;
+}
+
+.event-body {
+  padding: 22px;
+}
+
+.event-date {
+  color: #ff4a4a;
+  font-weight: bold;
+  letter-spacing: .12em;
+}
+
+.event-body h3 {
+  margin: 8px 0;
+  font-size: 28px;
+}
+
+.event-body p {
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.booking {
+  padding-bottom: 120px;
+}
+
+.booking-card {
+  text-align: center;
+  padding: 46px 24px;
+  background: linear-gradient(145deg, rgba(120,0,0,.55), rgba(0,0,0,.72));
+  border: 1px solid rgba(255,0,0,.55);
+  border-radius: 28px;
+  box-shadow: 0 0 45px rgba(255,0,0,.22);
+}
+
+.contacts {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 22px;
+}
+
+.contacts a {
+  color: white;
+  text-decoration: none;
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.22);
+  padding: 14px 18px;
+  border-radius: 999px;
+}
+
+footer {
+  text-align: center;
+  padding: 35px;
+  color: #aaa;
+  border-top: 1px solid rgba(255,0,0,.25);
+}
+
+@media (max-width: 850px) {
+  .topbar {
+    height: auto;
+    gap: 12px;
+    flex-direction: column;
+    padding: 12px;
+  }
+
+  .brand img {
+    width: 190px;
+    height: 48px;
+  }
+
+  .nav {
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav a {
+    font-size: 12px;
+  }
+
+  .photo-grid,
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 60px 16px;
+  }
+
+  .ghost {
+    margin-left: 0;
+    margin-top: 8px;
+  }
+}
+
+@media (min-width: 851px) and (max-width: 1100px) {
+  .photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
