@@ -1,0 +1,24 @@
+{
+  "gallery": [
+    {
+      "image": "photo1.jpeg"
+    },
+    {
+      "image": "photo2.jpeg"
+    },
+    {
+      "image": "photo3.jpeg"
+    },
+    {
+      "image": "photo4.jpeg"
+    }
+  ],
+  "events": [
+    {
+      "title": "Victoria`s birthday",
+      "date": "29/05",
+      "description": "Ближайшее мероприятие OLEGATORSHA.",
+      "image": "photo2.jpeg"
+    }
+  ]
+}

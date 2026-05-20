@@ -2,25 +2,31 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: ""
-public_folder: "/"
+media_folder: "uploads"
+public_folder: "/uploads"
 
 collections:
-  - name: "events"
-    label: "Мероприятия"
-    folder: "content/events"
-    create: true
+  - name: "site"
+    label: "Сайт"
+    files:
+      - name: "content"
+        label: "Фото и мероприятия"
+        file: "data/site.json"
+        format: "json"
+        fields:
+          - label: "Фото"
+            name: "gallery"
+            widget: "list"
+            summary: "{{fields.image}}"
+            fields:
+              - { label: "Фото", name: "image", widget: "image" }
 
-    fields:
-      - {label: "Название", name: "title", widget: "string"}
-      - {label: "Описание", name: "body", widget: "markdown"}
-      - {label: "Фото", name: "image", widget: "image"}
-
-  - name: "gallery"
-    label: "Фото"
-
-    folder: "content/gallery"
-    create: true
-
-    fields:
-      - {label: "Фото", name: "image", widget: "image"}
+          - label: "Мероприятия"
+            name: "events"
+            widget: "list"
+            summary: "{{fields.date}} — {{fields.title}}"
+            fields:
+              - { label: "Название", name: "title", widget: "string" }
+              - { label: "Дата", name: "date", widget: "string" }
+              - { label: "Описание", name: "description", widget: "text" }
+              - { label: "Фото", name: "image", widget: "image" }

@@ -23,7 +23,7 @@
     <section id="home" class="hero">
       <div class="hero-glow"></div>
       <div class="hero-content">
-        <img class="hero-logo" src="images/logo.jpeg" alt="OLEGATORSHA" />
+        <img class="hero-logo" src="logo.jpeg" alt="OLEGATORSHA" />
         <p class="subtitle">Drag Queen • Show • Performance</p>
         <div class="hero-buttons">
           <a href="#photos">Смотреть фото</a>
@@ -36,16 +36,8 @@
       <div class="section-head">
         <p class="eyebrow">Gallery</p>
         <h2>Фото</h2>
-        <p>Здесь можно добавлять фотографии прямо на сайте. Они сохраняются в браузере.</p>
+        <p>Фотографии с мероприятий OLEGATORSHA.</p>
       </div>
-
-      <div class="admin-panel">
-        <h3>Добавить фото</h3>
-        <input id="photoInput" type="file" accept="image/*" multiple />
-        <button onclick="addPhotos()">Добавить фото</button>
-        <button class="ghost" onclick="resetPhotos()">Вернуть начальные фото</button>
-      </div>
-
       <div id="photoGrid" class="photo-grid"></div>
     </section>
 
@@ -53,18 +45,8 @@
       <div class="section-head">
         <p class="eyebrow">Events</p>
         <h2>Мероприятия</h2>
-        <p>Можно добавлять и удалять мероприятия: название, дата, описание и фото.</p>
+        <p>Ближайшие и прошедшие мероприятия.</p>
       </div>
-
-      <div class="admin-panel">
-        <h3>Добавить мероприятие</h3>
-        <input id="eventTitle" type="text" placeholder="Название мероприятия" />
-        <input id="eventDate" type="text" placeholder="Дата, например 29/05" />
-        <textarea id="eventDescription" placeholder="Описание"></textarea>
-        <input id="eventImage" type="file" accept="image/*" />
-        <button onclick="addEvent()">Добавить мероприятие</button>
-      </div>
-
       <div id="eventsGrid" class="events-grid"></div>
     </section>
 
