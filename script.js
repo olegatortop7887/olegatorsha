@@ -61,3 +61,12 @@ loadSiteData().then(data => {
   renderPhotos(data.gallery);
   renderEvents(data.events);
 });
+// === OLEGATORSHA INTRO ANIMATION ===
+window.addEventListener("load", () => {
+  const intro = document.querySelector(".intro-screen");
+  if (!intro) return;
+
+  setTimeout(() => {
+    intro.classList.add("hidden");
+  }, 3600);
+});
