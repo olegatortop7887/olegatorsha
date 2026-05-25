@@ -11,17 +11,41 @@
     },
     {
       "image": "photo4.jpeg"
-    },
-    {
-      "image": "/uploads/img_8039.jpg"
     }
   ],
   "events": [
     {
-      "title": "Victoria`s birthday",
+      "status": "upcoming",
       "date": "29/05",
-      "description": "Ближайшее мероприятие OLEGATORSHA.",
-      "image": "photo2.jpeg"
+      "title_ru": "Victoria`s birthday",
+      "title_he": "יום ההולדת של ויקטוריה",
+      "title_en": "Victoria`s birthday",
+      "place_ru": "Star Loft",
+      "place_he": "Star Loft",
+      "place_en": "Star Loft",
+      "organizer_ru": "Victoria",
+      "organizer_he": "ויקטוריה",
+      "organizer_en": "Victoria",
+      "role_ru": "Участник / performer",
+      "role_he": "משתתף / Performer",
+      "role_en": "Participant / performer",
+      "description_ru": "Ближайшее мероприятие OLEGATORSHA. Здесь можно добавить длинное описание шоу, детали программы, кто организатор и какая роль у OLEGATORSHA.",
+      "description_he": "האירוע הקרוב של OLEGATORSHA.",
+      "description_en": "Upcoming OLEGATORSHA event.",
+      "image": "photo2.jpeg",
+      "links": [
+        {
+          "label_ru": "Star Loft",
+          "label_he": "Star Loft",
+          "label_en": "Star Loft",
+          "url": "https://www.instagram.com/show.star.loft/"
+        }
+      ],
+      "event_gallery": [
+        {
+          "image": "photo2.jpeg"
+        }
+      ]
     }
   ]
 }
