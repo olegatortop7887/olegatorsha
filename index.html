@@ -8,17 +8,20 @@
 </head>
 <body>
   <div class="intro-screen">
-  <img src="logo.jpeg" alt="OLEGATORSHA" class="intro-logo">
-</div>
-  <header class="topbar">
-    <a class="brand" href="#home">
-      <img src="logo.jpeg" alt="OLEGATORSHA logo" />
-    </a>
+    <img src="logo.jpeg" alt="OLEGATORSHA" class="intro-logo">
+  </div>
 
+  <header class="topbar">
+    <a class="brand" href="#home"><img src="logo.jpeg" alt="OLEGATORSHA logo" /></a>
     <nav class="nav">
-      <a href="#photos">Фото</a>
-      <a href="#events">Мероприятия</a>
-      <a href="#booking" class="order-btn">Заказать</a>
+      <a href="#photos" data-i18n="navPhotos">Фото</a>
+      <a href="#events" data-i18n="navEvents">Мероприятия</a>
+      <a href="#booking" class="order-btn" data-i18n="navBooking">Заказать</a>
+      <div class="language-switcher">
+        <button type="button" onclick="setLanguage('ru')">RU</button>
+        <button type="button" onclick="setLanguage('he')">HE</button>
+        <button type="button" onclick="setLanguage('en')">EN</button>
+      </div>
     </nav>
   </header>
 
@@ -29,8 +32,8 @@
         <img class="hero-logo" src="logo.jpeg" alt="OLEGATORSHA" />
         <p class="subtitle">Drag Queen • Show • Performance</p>
         <div class="hero-buttons">
-          <a href="#photos">Смотреть фото</a>
-          <a href="#events">Мероприятия</a>
+          <a href="#photos" data-i18n="heroPhotos">Смотреть фото</a>
+          <a href="#events" data-i18n="heroEvents">Мероприятия</a>
         </div>
       </div>
     </section>
@@ -38,26 +41,33 @@
     <section id="photos" class="section">
       <div class="section-head">
         <p class="eyebrow">Gallery</p>
-        <h2>Фото</h2>
-        <p>Фотографии с мероприятий OLEGATORSHA.</p>
+        <h2 data-i18n="photosTitle">Фото</h2>
+        <p data-i18n="photosText">Фотографии с мероприятий OLEGATORSHA.</p>
       </div>
-      <div id="photoGrid" class="photo-grid"></div>
+      <div class="carousel-wrap">
+        <button class="carousel-btn prev" type="button" onclick="moveCarousel(-1)">‹</button>
+        <div id="photoCarousel" class="photo-carousel"></div>
+        <button class="carousel-btn next" type="button" onclick="moveCarousel(1)">›</button>
+      </div>
     </section>
 
     <section id="events" class="section">
       <div class="section-head">
         <p class="eyebrow">Events</p>
-        <h2>Мероприятия</h2>
-        <p>Ближайшие и прошедшие мероприятия.</p>
+        <h2 data-i18n="eventsTitle">Мероприятия</h2>
+        <p data-i18n="eventsText">Ближайшие и прошедшие мероприятия.</p>
       </div>
-      <div id="eventsGrid" class="events-grid"></div>
+      <h3 class="event-group-title" data-i18n="upcomingTitle">Ближайшие мероприятия</h3>
+      <div id="upcomingEventsGrid" class="events-grid"></div>
+      <h3 class="event-group-title" data-i18n="pastTitle">Прошедшие мероприятия</h3>
+      <div id="pastEventsGrid" class="events-grid"></div>
     </section>
 
     <section id="booking" class="section booking">
       <div class="booking-card">
         <p class="eyebrow">Booking</p>
-        <h2>Заказать OLEGATORSHA</h2>
-        <p>Для заказа выступления, мероприятия или шоу:</p>
+        <h2 data-i18n="bookingTitle">Заказать OLEGATORSHA</h2>
+        <p data-i18n="bookingText">Для заказа выступления, мероприятия или шоу:</p>
         <div class="contacts">
           <a href="https://www.instagram.com/_olegatorsha_/" target="_blank">Instagram: @_olegatorsha_</a>
           <a href="tel:+972542454368">Телефон: +972542454368</a>
@@ -67,10 +77,22 @@
     </section>
   </main>
 
-  <footer>
-    <p>© OLEGATORSHA</p>
-  </footer>
+  <div id="eventModal" class="event-modal">
+    <div class="event-modal-backdrop" onclick="closeEventModal()"></div>
+    <div class="event-modal-content">
+      <button class="event-modal-close" type="button" onclick="closeEventModal()">×</button>
+      <div id="eventModalBody"></div>
+    </div>
+  </div>
 
+  <div id="lightbox" class="lightbox">
+    <button class="lightbox-close" type="button" onclick="closeLightbox()">×</button>
+    <button class="lightbox-nav lightbox-prev" type="button" onclick="moveLightbox(-1)">‹</button>
+    <img id="lightboxImage" src="" alt="OLEGATORSHA photo">
+    <button class="lightbox-nav lightbox-next" type="button" onclick="moveLightbox(1)">›</button>
+  </div>
+
+  <footer><p>© OLEGATORSHA</p></footer>
   <script src="script.js"></script>
 </body>
 </html>
