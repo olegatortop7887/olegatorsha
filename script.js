@@ -133,3 +133,4 @@ window.addEventListener("load", async ()=>{
   applyTranslations();
   renderAll();
 });
+
