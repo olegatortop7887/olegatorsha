@@ -49,3 +49,28 @@
     }
   ]
 }
+{
+  "gallery": [
+    {
+      "image": "photo1.jpeg"
+    }
+  ],
+  "events": [
+    {
+      "status": "upcoming",
+      "date": "29/05",
+      "title_ru": "Victoria`s birthday",
+      "description_ru": "Длинное описание шоу",
+      "image": "photo2.jpeg",
+      "address_ru": "Адрес",
+      "google_maps_url": "https://maps.google.com/",
+      "waze_url": "https://waze.com/",
+      "map_embed_url": "",
+      "event_gallery": [
+        {
+          "image": "photo2.jpeg"
+        }
+      ]
+    }
+  ]
+}
