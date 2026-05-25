@@ -1,76 +1,40 @@
 {
-  "gallery": [
-    {
-      "image": "photo1.jpeg"
-    },
-    {
-      "image": "photo2.jpeg"
-    },
-    {
-      "image": "photo3.jpeg"
-    },
-    {
-      "image": "photo4.jpeg"
-    }
-  ],
   "events": [
     {
-      "status": "upcoming",
-      "date": "29/05",
-      "title_ru": "Victoria`s birthday",
-      "title_he": "יום ההולדת של ויקטוריה",
-      "title_en": "Victoria`s birthday",
-      "place_ru": "Star Loft",
-      "place_he": "Star Loft",
-      "place_en": "Star Loft",
-      "organizer_ru": "Victoria",
-      "organizer_he": "ויקטוריה",
-      "organizer_en": "Victoria",
-      "role_ru": "Участник / performer",
-      "role_he": "משתתף / Performer",
-      "role_en": "Participant / performer",
-      "description_ru": "Ближайшее мероприятие OLEGATORSHA. Здесь можно добавить длинное описание шоу, детали программы, кто организатор и какая роль у OLEGATORSHA.",
-      "description_he": "האירוע הקרוב של OLEGATORSHA.",
-      "description_en": "Upcoming OLEGATORSHA event.",
-      "image": "photo2.jpeg",
-      "links": [
+      "description_he": "מופע דראג חגיגי ב־STAR LOFT לכבוד יום ההולדת של Victoria.\n\nמחכה לכם ערב של הופעות, שירה חיה, ריקודים ואווירת חג.\n\nבתוכנית:\n• מופע דראג\n• שירה חיה\n• דיסקוטק\n• בר וכיבוד\n• אווירת מסיבה\n\nמשתתפים:\n‏Victoria\n‏OLEGATORSHA\n‏Zoya Bass\nואמנים נוספים.\n\nפתיחת דלתות: 21:00\nתחילת המופע: 22:00\n",
+      "place_en": "STAR LOFT, Nesher (Haifa)",
+      "title_he": "Victoria’s Birthday — STAR LOFT SHOW",
+      "waze_url": " «16 התעשייה, נשר»: https://waze.com/ul/hsvbfmqqwz",
+      "description_ru": "Большое праздничное drag-show в STAR LOFT, посвящённое дню рождения Victoria.\n\nГостей ждёт вечер с живым вокалом, яркими сценическими номерами, танцами и праздничной атмосферой.\n\nВ программе:\n• Drag-show\n• Живой вокал\n• Дискотека\n• Бар и закуски\n• Атмосфера шоу и вечеринки\n\nУчастники вечера:\nVictoria\nOLEGATORSHA\nZoya Bass\nи другие артисты.\n\nОткрытие дверей: 21:00\nНачало шоу: 22:00",
+      "map_embed_url": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3354.6570335582014!2d35.041773276839805!3d32.774833773664604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151db07a29dc0e6b%3A0xe75bdddffb8aa6e0!2sHaTa&#39;asiya%2016%2C%20Nesher!5e0!3m2!1sru!2sil!4v1779741494039!5m2!1sru!2sil\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "address_he": " התעשייה 16, נשר",
+      "title_ru": "Victoria’s birthday — STAR LOFT SHOW",
+      "description_en": "A special drag-show event at STAR LOFT celebrating Victoria’s birthday.\n\nGuests will enjoy live vocals, stage performances, dancing and a festive atmosphere.\n\nProgram:\n• Drag show\n• Live vocals\n• Disco\n• Bar & snacks\n• Party atmosphere\n\nArtists:\nVictoria\nOLEGATORSHA\nZoya Bass\nand other performers.\n\nDoors open: 21:00\nShow starts: 22:00\n\nAddress: Atasia St. 16, Nesher (Haifa)\n\nOrganizer: Victoria / STAR LOFT\nMy role: Performer / show participant",
+      "organizer_he": "Victoria / STAR LOFT",
+      "event_gallery": [
         {
-          "label_ru": "Star Loft",
-          "label_he": "Star Loft",
-          "label_en": "Star Loft",
-          "url": "https://www.instagram.com/show.star.loft/"
+          "image": "/uploads/img_5948.jpg"
         }
       ],
-      "event_gallery": [
-        {
-          "image": "photo2.jpeg"
-        }
-      ]
-    }
-  ]
-}
-{
-  "gallery": [
-    {
-      "image": "photo1.jpeg"
-    }
-  ],
-  "events": [
-    {
+      "google_maps_url": "https://maps.app.goo.gl/T6N5gHCCgNSRfer5A?g_st=ic",
+      "address_ru": "ул. Атасия 16, Нешер",
+      "date": "29.05.2026",
+      "title_en": "Victoria’s Birthday — STAR LOFT SHOW",
       "status": "upcoming",
-      "date": "29/05",
-      "title_ru": "Victoria`s birthday",
-      "description_ru": "Длинное описание шоу",
-      "image": "photo2.jpeg",
-      "address_ru": "Адрес",
-      "google_maps_url": "https://maps.google.com/",
-      "waze_url": "https://waze.com/",
-      "map_embed_url": "",
-      "event_gallery": [
+      "organizer_ru": "Victoria / STAR LOFT",
+      "address_en": "‏HaTaasiya St. 16, Nesher",
+      "place_he": "STAR LOFT, נשר (חיפה)",
+      "organizer_en": "Victoria / STAR LOFT",
+      "links": [
         {
-          "image": "photo2.jpeg"
+          "label_ru": "instagram",
+          "label_he": "instagram",
+          "label_en": "instagram",
+          "url": "https://www.instagram.com/show.star.loft?igsh=MTE0cGNsY3N2bGdlaQ=="
         }
-      ]
+      ],
+      "place_ru": "STAR LOFT, Нешер (Хайфа)",
+      "image": "/uploads/img_5948.jpg"
     }
   ]
 }
