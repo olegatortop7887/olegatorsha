@@ -14,7 +14,7 @@ collections:
         file: "data/site.json"
         format: "json"
         fields:
-          - label: "Фото"
+          - label: "Главная карусель фото"
             name: "gallery"
             widget: "list"
             summary: "{{fields.image}}"
@@ -24,9 +24,43 @@ collections:
           - label: "Мероприятия"
             name: "events"
             widget: "list"
-            summary: "{{fields.date}} — {{fields.title}}"
+            summary: "{{fields.date}} — {{fields.title_ru}}"
             fields:
-              - { label: "Название", name: "title", widget: "string" }
+              - label: "Статус"
+                name: "status"
+                widget: "select"
+                options:
+                  - { label: "Ближайшее", value: "upcoming" }
+                  - { label: "Прошедшее", value: "past" }
               - { label: "Дата", name: "date", widget: "string" }
-              - { label: "Описание", name: "description", widget: "text" }
-              - { label: "Фото", name: "image", widget: "image" }
+              - { label: "Название RU", name: "title_ru", widget: "string" }
+              - { label: "Название HE", name: "title_he", widget: "string", required: false }
+              - { label: "Название EN", name: "title_en", widget: "string", required: false }
+              - { label: "Место RU", name: "place_ru", widget: "string", required: false }
+              - { label: "Место HE", name: "place_he", widget: "string", required: false }
+              - { label: "Место EN", name: "place_en", widget: "string", required: false }
+              - { label: "Организатор RU", name: "organizer_ru", widget: "string", required: false }
+              - { label: "Организатор HE", name: "organizer_he", widget: "string", required: false }
+              - { label: "Организатор EN", name: "organizer_en", widget: "string", required: false }
+              - { label: "Моя роль RU", name: "role_ru", widget: "string", required: false }
+              - { label: "Моя роль HE", name: "role_he", widget: "string", required: false }
+              - { label: "Моя роль EN", name: "role_en", widget: "string", required: false }
+              - { label: "Описание RU", name: "description_ru", widget: "text" }
+              - { label: "Описание HE", name: "description_he", widget: "text", required: false }
+              - { label: "Описание EN", name: "description_en", widget: "text", required: false }
+              - { label: "Главное фото / афиша", name: "image", widget: "image" }
+              - label: "Ссылки"
+                name: "links"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Название ссылки RU", name: "label_ru", widget: "string" }
+                  - { label: "Название ссылки HE", name: "label_he", widget: "string", required: false }
+                  - { label: "Название ссылки EN", name: "label_en", widget: "string", required: false }
+                  - { label: "URL", name: "url", widget: "string" }
+              - label: "Фото этого мероприятия"
+                name: "event_gallery"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Фото", name: "image", widget: "image" }
