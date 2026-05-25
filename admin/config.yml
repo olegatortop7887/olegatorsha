@@ -20,7 +20,6 @@ collections:
             summary: "{{fields.image}}"
             fields:
               - { label: "Фото", name: "image", widget: "image" }
-
           - label: "Мероприятия"
             name: "events"
             widget: "list"
@@ -49,6 +48,12 @@ collections:
               - { label: "Описание HE", name: "description_he", widget: "text", required: false }
               - { label: "Описание EN", name: "description_en", widget: "text", required: false }
               - { label: "Главное фото / афиша", name: "image", widget: "image" }
+              - { label: "Адрес RU", name: "address_ru", widget: "string", required: false }
+              - { label: "Адрес HE", name: "address_he", widget: "string", required: false }
+              - { label: "Адрес EN", name: "address_en", widget: "string", required: false }
+              - { label: "Google Maps link", name: "google_maps_url", widget: "string", required: false }
+              - { label: "Waze link", name: "waze_url", widget: "string", required: false }
+              - { label: "Google Maps Embed link", name: "map_embed_url", widget: "string", required: false }
               - label: "Ссылки"
                 name: "links"
                 widget: "list"
